@@ -1,57 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sayan MLBB Top-Up</title>
+  <meta charset="UTF-8">
+  <title>Sayan MLBB Top-Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Segoe UI, Arial, sans-serif;
-  background:#0b1220;
-  color:#fff;
-}
-header{
-  background:linear-gradient(90deg,#0f1c3f,#152a6a);
-  padding:18px;
-  text-align:center;
-}
-header h1{
-  margin:0;
-  font-size:26px;
-}
-header p{
-  margin:5px 0 0;
-  font-size:14px;
-  opacity:.8;
-}
-.container{
-  max-width:1000px;
-  margin:auto;
-  padding:20px;
-}
-.section{
-  margin-bottom:35px;
-}
-.section h2{
-  margin-bottom:15px;
-  border-left:4px solid #00e0ff;
-  padding-left:10px;
-}
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-  gap:15px;
-}
-.card{
-  background:#141f44;
-  border-radius:12px;
-  padding:15px;
-  text-align:center;
-  transition:.3s;
-}
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#0b1220;
+      color:#fff;
+    }
+
+    header{
+      background: linear-gradient(90deg,#2563eb,#06b6d4);
+      padding:20px;
+      text-align:center;
+    }
+
+    .container{
+      padding:20px;
+      max-width:420px;
+      margin:auto;
+    }
+
+    .card{
+      background:#111827;
+      padding:16px;
+      border-radius:12px;
+      margin-bottom:15px;
+    }
+
+    input, button{
+      width:100%;
+      padding:12px;
+      margin-top:10px;
+      border-radius:8px;
+      border:none;
+      font-size:15px;
+    }
+
+    input{
+      background:#1f2933;
+      color:white;
+    }
+
+    button{
+      background:#22c55e;
+      color:black;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    .price{
+      display:flex;
+      justify-content:space-between;
+      margin-top:10px;
+      background:#1f2933;
+      padding:10px;
+      border-radius:8px;
+    }
+
+    footer{
+      text-align:center;
+      font-size:12px;
+      opacity:.6;
+      margin-top:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🔥 Sayan MLBB</h1>
+  <p>Heroes • Diamonds • Top-Up</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Diamond Top-Up (Demo)</h3>
+    <input placeholder="Player ID">
+    <input placeholder="Server ID">
+    <button onclick="alert('Payment coming soon')">
+      Buy Diamonds
+    </button>
+  </div>
+
+  <div class="card">
+    <h4>Prices</h4>
+    <div class="price"><span>86 Diamonds</span><span>₹89</span></div>
+    <div class="price"><span>172 Diamonds</span><span>₹179</span></div>
+    <div class="price"><span>344 Diamonds</span><span>₹349</span></div>
+  </div>
+
+</div>
+
+<footer>
+  ⚠️ Demo site • Not affiliated with Moonton
+</footer>
+
+</body>
+</html>
